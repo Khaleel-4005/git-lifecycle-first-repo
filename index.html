@@ -7,23 +7,26 @@
     <title>Life-Cycle-First-repo</title>
 </head>
 <body>
-    <h1>Git Lifecycle & First Repo</h1>
 
-    <p>This is my first Git push and pull practice.</p>
-    <p>Change made from GitHub website.</p>
-    <h1>Hello World!</h1>
-
-    <p>Feature: added new paragraph from feature branch</p>
-    <p>HTML provides the structure and content of a web page, using elements like <p> for paragraphs, <h1> for headings, and <img> for images. CSS is then used to style this content, defining aspects like colors, fonts, layout, and spacing, to control the visual presentation of the HTML elements. JavaScript adds interactivity and dynamic behavior to the web page, allowing for features such as animated elements, form validation, and communication with servers to fetch data, enhancing the user experience beyond static content and styling.</p>
+    
+     <div class="container">
+        <h2>Sign Up</h2>
+        <form onsubmit="redirectToHomePage(event)">
+            <div class="name-fields">
+                <input type="text" placeholder="First Name *" required>
+                <input type="text" placeholder="Last Name *" required>
+            </div>
         
-    <p>This line combines both main and feature branch changes after resolving the conflict.</p>
-
-
-
- <section>
-  <h2>About Git Pull Requests</h2>
-  <p>Pull Requests allow developers to review and discuss code before merging it into the main branch, ensuring collaboration and quality control.</p>
-</section>
+            <input type="email" placeholder="Email Address *" required>
+            <input type="password" placeholder="Password *" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe">I want to receive inspiration, marketing promotions, and updates via email.</label>
+            </div>
+            <button type="submit">LOG IN</button>
+        </form>
+        <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
 
 <p>This line is added in main branch for conflict testing.</p>
 
